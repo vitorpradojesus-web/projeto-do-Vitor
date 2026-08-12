@@ -1,41 +1,67 @@
-<!DOCTYPE html>
- 
-
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-</header>   
-<main>
-<h2>Meu primeiro post</h2>
-<p>Por: Vitor</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-</main>
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 20px; text-align: center; }
-        .container { width: 80%; margin: 20px auto; }
-        article { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
-        footer { text-align: center; padding: 10px; background: #333; color: #fff; margin-top: 20px; }
-    </style>
+    <title>Meu Blog Pessoal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Cabeçalho do Blog -->
     <header>
-        <h1>Meu Blog Pessoal</h1>
+        <div class="logo">Meu Blog</div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <article>
-            <h2>Título do Primeiro Post</h2>
-            <p>Este é o conteúdo do meu primeiro artigo no blog. Aqui você pode escrever textos sobre qualquer assunto.</p>
-        </article>
-    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        
+        <!-- Lista de Postagens -->
+        <section class="posts">
+            
+            <!-- Post 1 -->
+            <article class="post-card">
+                <h2>Como comecei a programar em 2026</h2>
+                <p class="post-meta">Postado em 12 de Agosto de 2026 por Autor</p>
+                <p>Este é o resumo da minha primeira publicação no blog. Aqui você pode compartilhar suas experiências, aprendizados e ideias com o mundo...</p>
+                <a href="#" class="read-more">Ler mais</a>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post-card">
+                <h2>Dicas essenciais de HTML e CSS</h2>
+                <p class="post-meta">Postado em 10 de Agosto de 2026 por Autor</p>
+                <p>Aprenda a estruturar suas páginas web de forma simples, limpa e moderna utilizando as melhores práticas do mercado de desenvolvimento...</p>
+                <a href="#" class="read-more">Ler mais</a>
+            </article>
+
+        </section>
+
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
+            <h3>Sobre Mim</h3>
+            <p>Olá! Sou um entusiasta da tecnologia criando o meu primeiro espaço na internet.</p>
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="#">Programação</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Estilo de Vida</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Meu Blog - Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
