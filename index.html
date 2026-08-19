@@ -64,4 +64,68 @@
     </footer>
 
 </body>
+     <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro Site - Curtir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button.curtido {
+            background-color: #2ed573;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minha Página</h1>
+    <p>Total de curtidas: <span id="contador">0</span></p>
+    <button id="botaoCurtir" onclick="alternarCurtida()">Curtir</button>
+
+    <script>
+        let curtido = false;
+        let totalCurtidas = 0;
+
+        function alternarCurtida() {
+            const botao = document.getElementById('botaoCurtir');
+            const contador = document.getElementById('contador');
+
+            if (curtido) {
+                totalCurtidas--;
+                curtido = false;
+                botao.innerText = 'Curtir';
+                botao.classList.remove('curtido');
+            } else {
+                totalCurtidas++;
+                curtido = true;
+                botao.innerText = 'Descurtir';
+                botao.classList.add('curtido');
+            }
+
+            contador.innerText = totalCurtidas;
+        }
+    </script>
+
+</body>
 </html>
+
+
+
+
+
+
+
+
